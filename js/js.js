@@ -47,24 +47,30 @@ function slide2 () {
 
 //switchColour
 
-$(document).ready(start);
+//$(document).ready(start);
 
-function start() {
-	console.log("Ready");
-} 
+// function start() {
+// 	console.log("Ready");
+// 	$("body").hasClass("black");
+// 	$(".pink").hasClass("black");
+// } 
 
-$("#changeColor").click(revealText);
+// $("#changeColor").click(revealText);
 
-function revealText() {
+// function revealText() {
 	
-	var color = $("body").hasClass("pink");
+// 	var color = $("body").hasClass("black");
 
-	if (color === true) {
-		$("body").removeClass("pink");
-	}
+// 	if (color === true) {
+// 		$("body").addClass("pink");
+// 	}
 
-	else {
-		$("body").addClass("pink");
+// 	else {
+// 		$("body").addClass("black");
 		
-	}
-}
+// 	}
+// }
+
+
+
+
