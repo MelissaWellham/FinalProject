@@ -40,7 +40,7 @@ $(document).ready(function(){
 
 function slide2 () {
 	$(this).closest(".moreMe").hide("slow");
-	$(".me").show();
+	$(this).siblings(".me").show(); //isues here
 	// $(".readLess").hide();
 	// $(".moreInfo").hide();
 }

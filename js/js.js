@@ -12,6 +12,8 @@ $(document).ready(function(){
 
 
 $(document).ready(function(){
+	$(".moreInfo").hide();
+	$(".moreInfoEmployment").hide();
 	$(".readMore").click(function(event){
 		event.preventDefault();
 		$(this).hide(slide);
@@ -40,10 +42,11 @@ $(document).ready(function(){
 
 function slide2 () {
 	$(this).closest(".moreInfo").hide("slow");
-	$(".readMore").show();
+	$(this).parent().siblings(".readMore").show();
 	// $(".readLess").hide();
 	// $(".moreInfo").hide();
 }
+
 
 //switchColour
 
@@ -71,6 +74,81 @@ function slide2 () {
 // 	}
 // }
 
+//Expand Employment
+
+// Expand CV
+
+
+$(document).ready(function(){
+	$(".moreInfoEmployment").hide();
+	$(".readMoreEmployment").click(function(event){
+		event.preventDefault();
+		$(this).hide(slide3);
+	})
+
+});
+
+function slide3 () {
+
+	$(this).next(".moreInfoEmployment").show("slow");
+	$(".readLessEmployment").show();
+}
+
+// Hide CV 
+
+$(document).ready(function(){
+	$(".readLessEmployment").click(function(event){
+		event.preventDefault();
+		$(this).hide(slide4);
+	})
+});
+
+// function hideContent() {
+// 	$(".moreInfo").slideUp("slow", slide2);
+// }
+
+function slide4 () {
+	$(this).closest(".moreInfoEmployment").hide("slow");
+	$(this).parent().siblings(".readMoreEmployment").show();
+	// $(".readLess").hide();
+	// $(".moreInfo").hide();
+}
+
+// Expand About 
+
+$(document).ready(function(){
+	$(".moreMe").hide();
+	$(".me").click(function(event){
+		event.preventDefault();
+		$(this).hide(slide5);
+	})
+
+});
+
+function slide5 () {
+
+	$(this).next(".moreMe").show("slow");
+}
+
+// Hide About 
+
+$(document).ready(function(){
+	$(".moreMe").click(function(event){
+		event.preventDefault();
+		$(this).hide(slide6);
+	})
+});
+
+// function hideContent() {
+// 	$(".moreInfo").slideUp("slow", slide2);
+// }
+
+function slide6 () {
+	$(this).closest(".moreMe").hide("slow");
+	$(this).siblings(".me").show(); //isues here
+	// $(".readLess").hide();
+	// $(".moreInfo").hide();
+}
 
 
 

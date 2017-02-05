@@ -32,14 +32,14 @@ a {
 
 h1 {
 	font-size: 30px;
-	color: #FF99CC;
+	/*color: #FF99CC;*/
 	font-weight: bold;
 	line-height: 1.7em;
 }
 
 h2 {
 	font-size: 24px;
-	color: #FFAD5C;
+/*	color: #FFAD5C;*/
 	font-weight: bold;
 	line-height: 1.7em;
 
@@ -47,19 +47,19 @@ h2 {
 
 h3 {
 	font-size: 18px;
-	color: #FFFF99;
+/*	color: #FFFF99;*/
 	line-height: 1.7em;
 }
 
 h4 {
 	font-size: 16px;
-	color: #99FFCC;
+/*	color: #99FFCC;*/
 	line-height: 1.7em;
 }
 
 p {
 	font-size: 14px;
-	color: #FFFF99;
+/*	color: #FFFF99;*/
 	line-height: 1.7em;
 }
 
@@ -107,22 +107,6 @@ li+li+li+li+li { color: #FF99CC; }
 li+li+li+li+li+li { color: #FFAD5C; }
 li+li+li+li+li+li+li { color: #FFFF99; }
 li+li+li+li+li+li+li+li { color: #99FFCC;; }
-
-/*#desktopMenu ul li { color: #FF99CC; }
-#desktopMenu ul li+li { color: #FFAD5C; }
-#desktopMenu ul li+li+li { color: #FFFF99; }
-#desktopMenu ul li+li+li+li { color: #99FFCC; }
-
-header #mobileMenu ul li { color: #FF99CC; }
-header #mobileMenu ul li+li { color: #FFAD5C; }
-header #mobileMenu ul li+li+li { color: #FFFF99; }
-header #mobileMenu ul li+li+li+li { color: #99FFCC; }
-
-footer ul li { color: #FF99CC; }
-footer ul li+li { color: #FFAD5C; }
-footer ul li+li+li { color: #FFFF99; }
-footer ul li+li+li+li { color: #99FFCC; }*/
-
 
 #intro {
 	background: black;
@@ -278,14 +262,23 @@ span {
 /*CV*/
 
 #cv {
-	padding: 50px;
+	padding-left: 50px;
 	width: 50%;
 	margin-left: auto;
 }
 
+.moreInfo {
+	display: inline-block;
+	width: 90%;
+	position: relative;
+	left: -500px;
+	/*margin: 0 -500px;*/
+/*	margin-left: auto;*/
+}
+
 #cv a {
 	font-weight: bold;
-	font-size: 20px;
+	font-size: 25px;
 	padding-bottom: 20px;
 	padding-top: 20px;
 }
@@ -296,7 +289,7 @@ span {
 }*/
 
 .cv {
-    counter-reset: my-badass-counter;
+    counter-reset: my-counter;
 }
 
 .cv li {
@@ -309,6 +302,26 @@ span {
     margin-right: 5px;
     font-weight: bolder;
     font-size: 18px;
+}
+
+.education {
+	color: #FF99CC;
+}
+
+/*.education a {
+	color: #FF99CC;
+}*/
+
+.employment {
+	color: #FFCC99;
+}
+
+.experience {
+	color: #FFFF99;
+}
+
+.coursework {
+	color: #99FFCC;
 }
 
 /*.education, .employment, .experience, .coursework {
@@ -697,6 +710,24 @@ textarea {
 	margin-top: 5px;
 }
 
+/*CV*/
+
+#cv {
+	padding: 10px;
+	width: 100%;
+	margin-left: auto;
+}
+
+.moreInfo {
+	display: inline-block;
+	width: 90%;
+	position: relative;
+	left: 0;
+	/*margin: 0 -500px;
+/*	margin-left: auto;}*/
+
+
+}
 
 }
 
