@@ -335,6 +335,12 @@ span {
 
 /*About*/
 
+.about img {
+	border-radius: 50%;
+	width: 350px;
+	padding: 10px;
+}
+
 .about {
 	text-align: center;
 	line-height: 1.7em;
@@ -397,6 +403,33 @@ span {
 	font-size: 30px;
 	margin-bottom: 40px;
 }
+
+/*Portfolio*/ 
+
+/*Portfolio*/
+
+.portfolio {
+	text-align: center;
+	line-height: 1.7em;
+	padding-top: 50px;
+}
+
+.portfolio span {
+	text-align: center;
+	width: 50%;
+	line-height: 1.7em;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+.portfolio li a {
+	font-family: 'raleway', sans-serif;
+	line-height: 2.5em;
+}
+
+/*p:active {
+	margin-bottom: 0px;
+}*/
 
 /*Contact Form*/
 
@@ -655,6 +688,23 @@ span {
 
 #green {
 	margin-bottom: 20px;
+}
+
+.about img {
+	border-radius: 50%;
+	width: 350px;
+	padding: 10px;
+	width: 20em;
+}
+
+/*Portfolio*/
+
+.portfolio span {
+	text-align: center;
+	width: 90%;
+	line-height: 1.7em;
+	margin-top: 5px;
+	margin-bottom: 5px;
 }
 
 /*Contact Form*/ 

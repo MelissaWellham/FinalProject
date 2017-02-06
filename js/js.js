@@ -150,5 +150,25 @@ function slide6 () {
 	// $(".moreInfo").hide();
 }
 
+// Expand Portfolio
 
+$(document).ready(function(){
+	$(".moreTopic").hide();
+	$(".topic").click(function(event){
+		event.preventDefault();
+		$(this).css("margin-bottom", "0"); 
+		$(this).next(".moreTopic").show("slow");
+	})
+
+});
+
+// // Hide Portfolio
+
+// $(document).ready(function(){
+// 	$(".topic").click(function(event){
+// 		event.preventDefault();
+// 		$(this).css("margin-bottom", "40px");
+// 		$(this).next(".moreTopic").hide("slow");
+// 	})
+// });
 
